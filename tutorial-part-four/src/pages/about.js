@@ -12,6 +12,14 @@ export default ({ data }) => (
     </Layout> 
 )
 
+// GraphQL babbby
+/*
+Page queries live outside of the component definition — 
+by convention at the end of a page component file — 
+and are only available on page components.
+** StaticQuery allows non-page components like layout.js
+to retrieve data from GraphQL queries
+*/
 export const query = graphql`
     query {
         site {
