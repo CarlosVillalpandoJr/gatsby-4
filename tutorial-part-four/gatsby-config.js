@@ -11,9 +11,16 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Title from siteMetadata`
+    siteTitle: `Panda eating pitoo`
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
