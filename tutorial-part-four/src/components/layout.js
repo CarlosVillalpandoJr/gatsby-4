@@ -13,25 +13,25 @@ export default ({ children }) => (
             padding-top: ${rhythm(1.5)};
         `}
     >
-    <Link to={`/`}>
-        <h3
+        <Link to={`/`}>
+            <h3
+                css={css`
+                    margin-bottom: ${rhythm(2)};
+                    display: inline-block;
+                    font-style: normal;
+                `}
+            >
+                Pandas Eating Lots
+            </h3>
+        </Link>
+        <Link
+            to={`/about/`}
             css={css`
-                margin-bottom: ${rhythm(2)};
-                display: inline-block;
-                font-style: normal;
+            float: right;
             `}
         >
-            Pandas Eating Lots
-        </h3>
-    </Link>
-    <Link
-        to={`/about/`}
-        css={css`
-        float: right;
-        `}
-    >
-        About
-    </Link>
-    {children}
+            About
+        </Link>
+        {children}
     </div>
 )
